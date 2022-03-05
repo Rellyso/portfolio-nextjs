@@ -73,19 +73,50 @@ export const ItemContainer = styled.div`
       height: auto;
       padding-top: 1.5rem;
       padding-bottom: 1rem;
-    }
 
-    h1 {
+      h1 {
       font-size: 1.2rem;
       margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
     }
 
-    h2 {
-      font-size: 1rem;
+    
+  }
+
+  @media (max-width: 700px) {
+    &:nth-child(even) > div {
+      margin-top: 0;
     }
 
-    p {
-      font-size: 0.9rem;
+    &:hover > div{
+      transform: translateY(0) scale(1.01);
     }
+    
+    > div {
+      height: auto;
+      padding: 2rem;
+
+      h1 {
+      font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    
   }
 `;
