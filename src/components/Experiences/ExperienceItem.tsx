@@ -1,12 +1,18 @@
 import { ItemContainer } from "./styles";
 
-export function ExperienceItem() {
+type Props = {
+  year: string;
+  title: string;
+  description: string;
+}
+
+export function ExperienceItem({ year, title, description }: Props) {
   return (
     <ItemContainer>
       <div>
-        <h1>2021</h1>
-        <h2>Dev Front-end</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet maxime minima qui quos. A et nesciunt facere. Porro sint deleniti eligendi</p>
+        <h1>{year}</h1>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
     </ItemContainer>
   )
