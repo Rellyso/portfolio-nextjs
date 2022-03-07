@@ -1,5 +1,7 @@
 import Head from 'next/head';
+import { ContactForm } from '../components/ContactForm';
 import { Experiences } from '../components/Experiences';
+import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { HomeHero } from '../components/HomeHero';
 import { Knowledge } from '../components/Knowledge';
@@ -16,7 +18,10 @@ export default function Home() {
         <Experiences />
         <Projects />
         <Knowledge />
+        <ContactForm />
       </main>
+
+      <Footer />
     </HomeContainer>
   );
 }
