@@ -1,6 +1,6 @@
-import { Header } from "../../components/Header";
-import { ProjectCard } from "../../components/ProjectCard";
-import { ProjectsContainer } from "../../styles/ProjectsStyles";
+import { Header } from '../../components/Header';
+import { ProjectCard } from '../../components/ProjectCard';
+import { ProjectsContainer } from '../../styles/ProjectsStyles';
 
 export default function Projects() {
   return (
@@ -33,5 +33,5 @@ export default function Projects() {
         />
       </main>
     </ProjectsContainer>
-  )
+  );
 }

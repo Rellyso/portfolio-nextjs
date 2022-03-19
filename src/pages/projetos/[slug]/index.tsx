@@ -1,7 +1,7 @@
-import { BannerProject } from "../../../components/BannerProject";
-import { Header } from "../../../components/Header";
-import { LinkButton } from "../../../components/LinkButton";
-import { ProjectContainer } from "../../../styles/ProjectStyles";
+import { BannerProject } from '../../../components/BannerProject';
+import { Header } from '../../../components/Header';
+import { LinkButton } from '../../../components/LinkButton';
+import { ProjectContainer } from '../../../styles/ProjectStyles';
 
 export default function Project() {
   return (

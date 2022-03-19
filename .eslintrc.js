@@ -6,10 +6,9 @@ module.exports = {
     jest: true
   },
   extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'airbnb-typescript',
-    'prettier'
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -23,6 +22,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    "prefer-const": "off",
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 'off',
     'prettier/prettier': 'error',
