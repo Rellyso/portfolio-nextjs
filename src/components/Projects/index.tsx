@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LinkButton } from '../LinkButton';
 import SectionTitle from '../SectionTitle';
 import { ProjectItem } from './ProjectItem';
 import { Container } from './styles';
@@ -33,13 +34,7 @@ export function Projects() {
 
       </section>
 
-      <button type="button">
-        <Link href="/projetos">
-          <a>
-            Ver todos os projetos
-          </a>
-        </Link>
-      </button>
+      <LinkButton url="/projetos">Ver todos os projetos</LinkButton>
     </Container>
   );
 };
