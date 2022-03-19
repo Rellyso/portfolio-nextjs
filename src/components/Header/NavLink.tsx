@@ -5,11 +5,21 @@ import { useRouter } from "next/router";
 type Props = {
   title: string,
   path: string,
+  includes?: boolean,
 }
 
-export function NavLink({ title, path }: Props) {
+export function NavLink({ title, path, includes }: Props) {
   const router = useRouter();
-  const isActive = router.pathname === path
+
+  function verifyIsActive() {
+    if (includes) {
+      return router.pathname.includes(path)
+    }
+
+    return path === router.pathname;
+  }
+
+  const isActive = verifyIsActive();
 
   return (
     <NavLinkContainer isActive={isActive}>
